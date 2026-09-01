@@ -26,18 +26,15 @@
     if (reduceMotion) im.src = im.getAttribute('data-gif');
   });
 
-  var setFinalCount = function (el) {
-    var t = el.getAttribute('data-count');
-    if (!t) return;
-    var decimals = parseInt(el.getAttribute('data-decimals') || '0', 10);
-    var prefix = el.getAttribute('data-prefix') || '';
-    var suffix = el.getAttribute('data-suffix') || '';
-    el.textContent = prefix + parseFloat(t).toFixed(decimals) + suffix;
-  };
+  // Numbers are already correct in the markup (see index.html etc.) so that
+  // anyone/anything not running this script — crawlers, link-preview bots,
+  // screen readers before hydration, JS-disabled browsers — sees the real
+  // figures. This script only adds a decorative fade/slide reveal; it never
+  // overwrites the stat text, so there is no zero-flash and no dependency on
+  // JS for correctness.
 
   if (reduceMotion) {
     document.querySelectorAll('[data-reveal]').forEach(function (el) { el.classList.add('is-visible'); });
-    document.querySelectorAll('.num-count').forEach(setFinalCount);
     return;
   }
 
@@ -53,38 +50,12 @@
     el.classList.add('is-visible');
   };
 
-  // Count-up
-  var animateNum = function (el) {
-    if (el._counted) return;
-    el._counted = true;
-    var target = parseFloat(el.getAttribute('data-count'));
-    var decimals = parseInt(el.getAttribute('data-decimals') || '0', 10);
-    var prefix = el.getAttribute('data-prefix') || '';
-    var suffix = el.getAttribute('data-suffix') || '';
-    var dur = 1400;
-    var start = performance.now();
-    var step = function (now) {
-      var t = Math.min(1, (now - start) / dur);
-      var eased = 1 - Math.pow(1 - t, 3);
-      el.textContent = prefix + (target * eased).toFixed(decimals) + suffix;
-      if (t < 1) requestAnimationFrame(step);
-      else el.textContent = prefix + target.toFixed(decimals) + suffix;
-    };
-    requestAnimationFrame(step);
-  };
-  var nums = Array.prototype.slice.call(document.querySelectorAll('.num-count'));
-
   var checkVisible = function () {
     var vh = window.innerHeight || document.documentElement.clientHeight;
     items.forEach(function (el) {
       if (el._revealed) return;
       var r = el.getBoundingClientRect();
       if (r.top < vh * 0.92 && r.bottom > 0) reveal(el);
-    });
-    nums.forEach(function (el) {
-      if (el._counted) return;
-      var r = el.getBoundingClientRect();
-      if (r.top < vh * 0.9 && r.bottom > 0) animateNum(el);
     });
   };
 
@@ -93,5 +64,5 @@
   window.addEventListener('resize', checkVisible);
 
   // Guaranteed fallback in case something never crosses the visibility threshold
-  setTimeout(function () { items.forEach(reveal); nums.forEach(animateNum); }, 2500);
+  setTimeout(function () { items.forEach(reveal); }, 2500);
 })();
