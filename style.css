@@ -425,6 +425,8 @@ a.build-card:hover{transform:translateY(-4px)}
   .role-row .role-company{text-align:left !important;font-size:15px !important;opacity:0.8}
   .role-row .role-arrow{display:none !important}
 
+  .skills-head{flex-direction:column !important;align-items:flex-start !important;gap:8px}
+
   .two-col,.rec-press,.education .two-col{grid-template-columns:1fr !important;gap:34px !important}
 
   .skill-feature{grid-template-columns:1fr !important;gap:24px !important;padding:32px 26px !important}
