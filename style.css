@@ -223,6 +223,22 @@ a.role-row:hover{opacity:0.66}
 .beyond-body p{margin-top:16px;font-size:14.5px;color:rgba(255,255,255,0.82);line-height:1.7}
 .beyond-foot{padding:18px 36px;border-top:1px solid rgba(255,255,255,0.2);display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.8)}
 
+/* ---------- Build (side projects) ---------- */
+.build-section{background:var(--cream)}
+.build-inner{padding:80px 48px}
+.build-section .kicker{font-size:13px;text-transform:uppercase;letter-spacing:0.16em;color:var(--rust)}
+.build-inner h2{margin-top:14px;font-family:var(--serif);font-size:clamp(30px,4.6vw,52px);letter-spacing:-0.01em;font-weight:400}
+.build-grid{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.build-card{border-radius:14px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:transform .2s ease}
+.build-card:hover{transform:translateY(-4px)}
+.build-card.dark{background:var(--ink)}
+.build-card.accent{background:var(--accent)}
+.build-body{padding:34px 36px;flex:1}
+.build-kicker{font-size:11px;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.55);margin-bottom:14px}
+.build-title{font-family:var(--serif);font-size:34px;color:#fff;line-height:1.05;font-style:italic}
+.build-body p{margin-top:16px;font-size:14.5px;color:rgba(255,255,255,0.82);line-height:1.7}
+.build-foot{padding:18px 36px;border-top:1px solid rgba(255,255,255,0.2);display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.8)}
+
 /* ---------- Footer / contact ---------- */
 .site-footer{padding:64px 48px 56px}
 .footer-inner{border-top:1.5px solid var(--ink);padding-top:60px}
@@ -387,7 +403,7 @@ a.role-row:hover{opacity:0.66}
   .navlinks > a{padding:14px 2px;font-size:16px;border-bottom:1px solid rgba(28,24,20,0.08)}
   .navlinks > a:last-child{margin-top:12px;justify-content:center;border-bottom:none}
 
-  .wrap,.wrap-narrow,.hero,.about-section,.feature,.approach-section .wrap,.path-section,.skills-section,.beyond-inner,.site-footer{
+  .wrap,.wrap-narrow,.hero,.about-section,.feature,.approach-section .wrap,.path-section,.skills-section,.build-inner,.beyond-inner,.site-footer{
     padding-left:22px !important;padding-right:22px !important;
   }
 
@@ -411,6 +427,7 @@ a.role-row:hover{opacity:0.66}
   .skill-feature{grid-template-columns:1fr !important;gap:24px !important;padding:32px 26px !important}
   .skill-cols{grid-template-columns:1fr !important;gap:26px !important}
 
+  .build-grid{grid-template-columns:1fr !important}
   .beyond-grid{grid-template-columns:1fr !important}
 
   .cs-hero,.cs-section,.cs-imagerow,.cs-press,.cs-footer,.cs-imagery-band{padding-left:22px !important;padding-right:22px !important}
