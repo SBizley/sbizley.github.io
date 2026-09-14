@@ -193,7 +193,7 @@ a.role-row:hover{opacity:0.66}
 .edu-row .school{font-size:13.5px;color:var(--muted)}
 
 /* ---------- Skills ---------- */
-.skills-section{padding:36px 48px 88px}
+.skills-section{padding:36px 48px 56px}
 .skills-head{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1.5px solid var(--ink);padding-bottom:18px}
 .skills-head h2{font-family:var(--serif);font-size:clamp(30px,4.6vw,52px);letter-spacing:-0.01em;font-weight:400}
 .skills-head .tag{font-size:13px;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted)}
