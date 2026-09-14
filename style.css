@@ -158,7 +158,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .path-hint{margin-top:18px;font-size:12.5px;color:var(--muted);letter-spacing:0.02em;display:flex;align-items:center;gap:8px}
 .path-hint .rule{width:18px;height:1px;background:var(--accent);display:block}
 .roles{margin-top:18px;border-top:1.5px solid var(--ink)}
-.role-row{display:grid;grid-template-columns:150px 1fr 132px 26px;gap:28px;padding:26px 0;border-bottom:1px solid rgba(28,24,20,0.16);align-items:baseline;transition:opacity .2s}
+.role-row{display:grid;grid-template-columns:150px 1fr 150px;gap:28px;padding:26px 0;border-bottom:1px solid rgba(28,24,20,0.16);align-items:baseline;transition:opacity .2s}
 a.role-row:hover{opacity:0.66}
 .role-row.muted{opacity:0.6}
 .role-date{font-size:13px;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted)}
@@ -166,9 +166,10 @@ a.role-row:hover{opacity:0.66}
 .role-desc{margin-top:6px;font-size:14.5px;color:var(--ink-soft);line-height:1.55}
 .role-desc a{border-bottom:1px solid rgba(var(--accent-rgb),0.4);transition:opacity .2s}
 .role-desc a:hover{opacity:0.6}
+.role-meta{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
 .role-company{font-family:var(--serif);font-size:21px;color:var(--accent);text-align:right}
 .role-company.small{font-size:18px}
-.role-arrow{justify-self:end;align-self:center;font-family:var(--serif);font-size:22px;color:var(--accent)}
+.role-arrow{font-family:var(--serif);font-size:22px;color:var(--accent);line-height:1}
 
 .rec-press{margin-top:64px;display:grid;grid-template-columns:1fr 1fr;gap:56px}
 .list-heading{font-size:13px;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);border-bottom:1px solid rgba(28,24,20,0.2);padding-bottom:12px}
@@ -420,7 +421,8 @@ a.build-card:hover{transform:translateY(-4px)}
   .approach-grid{grid-template-columns:1fr !important;gap:30px !important;margin-top:40px !important}
 
   .role-row{grid-template-columns:1fr !important;gap:5px !important;padding:22px 0 !important}
-  .role-row .role-company{text-align:left !important;font-size:15px !important;order:-1;opacity:0.8}
+  .role-row .role-meta{flex-direction:row !important;align-items:center !important;gap:8px !important;order:-1}
+  .role-row .role-company{text-align:left !important;font-size:15px !important;opacity:0.8}
   .role-row .role-arrow{display:none !important}
 
   .two-col,.rec-press,.education .two-col{grid-template-columns:1fr !important;gap:34px !important}
