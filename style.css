@@ -143,6 +143,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 /* ---------- Approach ---------- */
 .approach-section{background:var(--band);color:var(--ink);margin-top:40px;border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)}
+.approach-section .wrap{padding:80px 48px}
 .approach-section .kicker{font-size:13px;text-transform:uppercase;letter-spacing:0.16em;color:var(--rust)}
 .approach-section h2{margin-top:18px;max-width:920px;font-family:var(--serif);font-size:clamp(30px,4.6vw,56px);line-height:1.08;font-weight:400}
 .approach-grid{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:44px}
