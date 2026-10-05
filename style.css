@@ -146,7 +146,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .approach-section .wrap{padding:80px 48px}
 .approach-section .kicker{font-size:13px;text-transform:uppercase;letter-spacing:0.16em;color:var(--rust)}
 .approach-section h2{margin-top:18px;max-width:920px;font-family:var(--serif);font-size:clamp(30px,4.6vw,56px);line-height:1.08;font-weight:400}
-.approach-grid{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:44px}
+.approach-grid{margin-top:56px;display:grid;grid-template-columns:repeat(2,1fr);gap:44px 56px}
 .approach-item{border-top:1px solid var(--hairline-strong);padding-top:22px}
 .approach-item .roman{font-family:var(--serif);font-size:30px;color:var(--accent)}
 .approach-item h3{margin-top:12px;font-family:var(--serif);font-size:24px;font-weight:400}
