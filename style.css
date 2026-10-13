@@ -237,7 +237,7 @@ a.role-row:hover{opacity:0.66}
 .build-inner{padding:80px 48px}
 .build-section .kicker{font-size:13px;text-transform:uppercase;letter-spacing:0.16em;color:var(--rust)}
 .build-inner h2{margin-top:14px;font-family:var(--serif);font-size:clamp(30px,4.6vw,52px);letter-spacing:-0.01em;font-weight:400}
-.build-grid{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.build-grid{margin-top:42px;display:grid;grid-template-columns:minmax(0,560px);gap:24px}
 .build-card{border-radius:14px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:transform .2s ease}
 a.build-card:hover{transform:translateY(-4px)}
 .build-card.dark{background:var(--ink)}
