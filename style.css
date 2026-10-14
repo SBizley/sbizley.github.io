@@ -491,7 +491,6 @@ a.build-card:hover{transform:translateY(-4px)}
   .hero-grid > div:first-child{margin-top:0}
   .hero-photo{grid-column:auto;grid-row:auto}
 }
-.off-record-text{font-size:19px;line-height:1.65;color:var(--ink-soft);max-width:580px;margin:0}
 
 /* Plum: Young Serif has no italic, keep display type upright and slightly tighter */
 .nav .brand,.hero h1,h2,.about-title,.beyond-title,.build-title,.feature h2,.num-big,.role-title{letter-spacing:-0.02em}
