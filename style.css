@@ -90,7 +90,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .eyebrow .rule{width:30px;height:1px;background:var(--accent);display:block}
 .hero h1{
   margin-top:26px;font-family:var(--serif);font-weight:400;
-  font-size:clamp(32px,4.4vw,58px);line-height:1.15;letter-spacing:-0.015em;
+  font-size:clamp(48px,8vw,104px);line-height:1;letter-spacing:-0.02em;
   text-wrap:balance;max-width:900px;
 }
 .hero h1 a{color:var(--accent);border-bottom:1px solid rgba(var(--accent-rgb),0.4);transition:opacity .2s;font-style:italic}
@@ -253,7 +253,7 @@ a.build-card:hover{transform:translateY(-4px)}
 .footer-inner{border-top:1.5px solid var(--ink);padding-top:60px}
 .footer-inner h2{font-family:var(--serif);font-size:clamp(44px,9vw,124px);line-height:0.96;letter-spacing:-0.02em;font-weight:400}
 .footer-inner h2 i{color:var(--accent);font-style:italic}
-.footer-cta{margin-top:44px;display:flex;flex-wrap:wrap;gap:12px}
+.footer-cta{margin-top:0;display:flex;flex-wrap:wrap;gap:12px}
 .footer-meta{margin-top:60px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em}
 
 /* ---------- Case study pages ---------- */
@@ -456,3 +456,22 @@ a.build-card:hover{transform:translateY(-4px)}
   .metrics{grid-template-columns:1fr !important}
   .metrics > div:nth-child(odd){border-right:none !important}
 }
+
+/* ---------- Personal sections (Oct 2026) ---------- */
+.inline-link{color:var(--accent);border-bottom:1px solid rgba(var(--accent-rgb),0.4)}
+.link-row{color:inherit;text-decoration:none;transition:color .2s}
+.link-row .arrow{color:var(--accent);margin-left:4px;display:inline-block;transition:transform .2s}
+.link-row:hover p{color:var(--accent)}
+.link-row:hover .arrow{transform:translateX(4px)}
+.photo-slot{margin:0;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;border:1.5px dashed currentColor;opacity:.55;font-size:12px;text-transform:uppercase;letter-spacing:0.1em}
+.beyond-card .photo-slot{margin:16px 16px 0;border-radius:10px;color:#fff}
+.beyond-card.light .photo-slot{color:var(--muted)}
+.off-record .photo-slot{border-radius:14px;color:var(--muted);max-width:420px}
+.about-row .k{line-height:1.3}
+.beyond-card.full{flex-direction:row;flex-wrap:wrap}
+.beyond-card.full .photo-slot{flex:0 0 38%;margin:16px 0 16px 16px;aspect-ratio:4/3}
+.beyond-card.full .beyond-body{flex:1;min-width:260px;align-self:center}
+.beyond-card.full .beyond-foot{flex:0 0 100%}
+@media (max-width:900px){.beyond-card.full .photo-slot{flex:1 1 100%;margin:16px 16px 0}}
+/* Hide photo placeholders until real photos are added */
+.photo-slot{display:none !important}
