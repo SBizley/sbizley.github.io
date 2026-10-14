@@ -475,3 +475,17 @@ a.build-card:hover{transform:translateY(-4px)}
 @media (max-width:900px){.beyond-card.full .photo-slot{flex:1 1 100%;margin:16px 16px 0}}
 /* Hide photo placeholders until real photos are added */
 .photo-slot{display:none !important}
+
+/* Hero: photo centred against the text, tighter spacing */
+.hero{display:grid;grid-template-columns:1fr 300px;column-gap:72px;padding:56px 48px 24px}
+.hero-grid{display:contents}
+.hero > .eyebrow,.hero > h1,.hero-grid > div:first-child{grid-column:1}
+.hero-grid > div:first-child{margin-top:26px}
+.hero-photo{grid-column:2;grid-row:1 / span 3;align-self:center}
+#about.about-section{padding-top:40px}
+@media (max-width:900px){
+  .hero{display:block;padding-top:40px}
+  .hero-grid{display:grid}
+  .hero-grid > div:first-child{margin-top:0}
+  .hero-photo{grid-column:auto;grid-row:auto}
+}
