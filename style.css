@@ -100,7 +100,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .hero-grid{margin-top:26px;display:grid;grid-template-columns:1fr 300px;gap:56px;align-items:start}
 .hero-lede{font-size:19px;line-height:1.62;color:var(--ink-soft);max-width:580px}
 .hero-lede p + p{margin-top:14px}
-.hero-lede p:first-child{font-size:21px;color:var(--ink)}
 .hero-lede .num{font-family:var(--serif);color:var(--accent)}
 .hero-cta{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px}
 
@@ -492,3 +491,4 @@ a.build-card:hover{transform:translateY(-4px)}
   .hero-grid > div:first-child{margin-top:0}
   .hero-photo{grid-column:auto;grid-row:auto}
 }
+.off-record-text{font-size:19px;line-height:1.65;color:var(--ink-soft);max-width:580px;margin:0}
