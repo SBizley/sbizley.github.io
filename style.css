@@ -495,3 +495,18 @@ a.build-card:hover{transform:translateY(-4px)}
 /* Plum: DM Serif Display headings, keep display type upright and slightly tighter */
 .nav .brand,.hero h1,h2,.about-title,.beyond-title,.build-title,.feature h2,.num-big,.role-title{letter-spacing:-0.02em}
 h1 em,h2 em,h3 em{font-style:normal}
+.venture-banner-inner.v3{background:var(--accent)}
+.cs-approach-grid.two{grid-template-columns:repeat(2,1fr)}
+@media (max-width:900px){.cs-approach-grid.two{grid-template-columns:1fr}}
+
+/* Critique fixes, Oct 2026 */
+.about-row .k{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:0.1em;line-height:1.4}
+@media (max-width:600px){
+  .about-row{flex-direction:column;align-items:flex-start;gap:6px}
+  .about-row .k{width:auto}
+}
+.venture-banner + .venture-banner,.cs-section + .venture-banner,.cs-press + .venture-banner,.venture-banner{margin-top:72px}
+.feature-stats .num-big{color:#F06292}
+.beyond-kicker{color:rgba(255,255,255,0.8)}
+.beyond-card.accent .beyond-foot{color:#fff}
+.beyond-card.accent .beyond-kicker,.beyond-card.accent .beyond-body p{color:#fff}
