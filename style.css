@@ -525,3 +525,4 @@ a.build-card:hover h3{color:var(--accent)}
 .btn-on-dark:hover{color:var(--cream);border-color:var(--cream)}
 .build-card{border-radius:0}
 .hero-lede a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
+@media (min-width:901px){.build-section .approach-grid{grid-template-columns:repeat(3,1fr);gap:44px 40px}}
