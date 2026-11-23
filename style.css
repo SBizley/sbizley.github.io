@@ -544,5 +544,21 @@ a.build-card:hover h3{color:var(--accent)}
 .feature-figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:14px}
 .feature-figure figcaption{font-size:14px;line-height:1.5;color:rgba(250,246,239,0.82);max-width:340px;text-align:center}
 .gif-toggle{font:inherit;font-size:13px;letter-spacing:0.04em;color:#FAF6EF;background:transparent;border:1px solid rgba(250,246,239,0.5);border-radius:999px;padding:8px 16px;cursor:pointer}
-.gif-toggle:hover,.gif-toggle:focus-visible{border-color:#FAF6EF;outline:none}
+.gif-toggle:hover{border-color:#FAF6EF}
 .feature-media-frame{border-color:rgba(250,246,239,0.35)}
+
+/* Clean-up: sentence-case labels, no tracked caps */
+.navlinks,.nav .back,.eyebrow,.num-label,.about-row .k,.approach-section .kicker,.role-date,.list-heading,.footer-meta,
+.cs-imagerow-caption,.cs-statpanel .k,.cs-section-head .chip,.cs-practice-kicker,.cs-practice-item .cat,.cs-tradeoff .lbl,
+.cs-next .k,.venture-banner .k,.build-meta,.beyond-kicker{text-transform:none !important;letter-spacing:0.01em !important}
+.navlinks{font-size:15px}
+.eyebrow,.role-date,.list-heading,.num-label,.build-meta,.cs-section-head .chip,.cs-practice-item .cat,.cs-tradeoff .lbl{font-size:14px}
+.about-row .k{font-family:var(--sans);font-size:15px;font-weight:600}
+/* Motion: one moment per page (the hero), everything else just appears */
+[data-reveal]{opacity:1;transform:none;transition:none;will-change:auto}
+.hero [data-reveal],.hero[data-reveal],.cs-hero [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1)}
+.hero [data-reveal].is-visible,.cs-hero [data-reveal].is-visible{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.hero [data-reveal],.cs-hero [data-reveal]{opacity:1 !important;transform:none !important;transition:none !important}}
+.cs-statpanel .big{color:#E9A6AE}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.feature-section a:focus-visible,.feature-section button:focus-visible,.beyond-card a:focus-visible,.cs-statpanel a:focus-visible{outline-color:#FAF6EF}
