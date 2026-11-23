@@ -4,18 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Figtree:wght@400;500;600&display=swap');
 
 :root{
-  --cream:#FCF5F3;
-  --band:#F5E7E4;
-  --ink:#24162A;
-  --ink-soft:#3F2C45;
-  --muted:#7A6570;
-  --muted-2:#5A4652;
-  --rust:#C2185B;
-  --hairline:rgba(36,22,42,0.11);
-  --hairline-strong:rgba(36,22,42,0.22);
+  --cream:#FAF6EF;
+  --band:#F1E6DA;
+  --ink:#2A1215;
+  --ink-soft:#4A2A2E;
+  --muted:#7A6260;
+  --muted-2:#5C4447;
+  --rust:#7A1F2B;
+  --hairline:rgba(42,18,21,0.11);
+  --hairline-strong:rgba(42,18,21,0.22);
 
-  --accent:#C2185B;
-  --accent-rgb:194,24,91;
+  --accent:#7A1F2B;
+  --accent-rgb:122,31,43;
 
   --serif:'DM Serif Display', Georgia, serif;
   --sans:'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -507,7 +507,7 @@ h1 em,h2 em,h3 em{font-style:normal}
   .about-row .k{width:auto}
 }
 .venture-banner + .venture-banner,.cs-section + .venture-banner,.cs-press + .venture-banner,.venture-banner{margin-top:72px}
-.feature-stats .num-big{color:#F06292}
+.feature-stats .num-big{color:#E9A6AE}
 .beyond-kicker{color:rgba(255,255,255,0.8)}
 .beyond-card.accent .beyond-foot{color:#fff}
 .beyond-card.accent .beyond-kicker,.beyond-card.accent .beyond-body p{color:#fff}
@@ -539,3 +539,10 @@ a.build-card:hover h3{color:var(--accent)}
   .navlinks > a{padding:14px 2px;font-size:16px;border-bottom:1px solid rgba(36,22,42,0.08)}
   .navlinks > a:last-child{margin-top:12px;justify-content:center;border-bottom:none}
 }
+
+/* Featured media: caption + pause control */
+.feature-figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:14px}
+.feature-figure figcaption{font-size:14px;line-height:1.5;color:rgba(250,246,239,0.82);max-width:340px;text-align:center}
+.gif-toggle{font:inherit;font-size:13px;letter-spacing:0.04em;color:#FAF6EF;background:transparent;border:1px solid rgba(250,246,239,0.5);border-radius:999px;padding:8px 16px;cursor:pointer}
+.gif-toggle:hover,.gif-toggle:focus-visible{border-color:#FAF6EF;outline:none}
+.feature-media-frame{border-color:rgba(250,246,239,0.35)}

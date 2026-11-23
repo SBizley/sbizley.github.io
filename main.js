@@ -23,7 +23,17 @@
 
   // Reduced-motion: swap animated GIFs for their static poster frame
   document.querySelectorAll('img[data-gif]').forEach(function (im) {
-    if (reduceMotion) im.src = im.getAttribute('data-gif');
+    var anim = im.getAttribute('src'), still = im.getAttribute('data-gif');
+    var fig = im.closest('figure'), btn = fig ? fig.querySelector('.gif-toggle') : null;
+    function set(playing) {
+      im.src = playing ? anim : still;
+      if (btn) {
+        btn.textContent = playing ? 'Pause animation' : 'Play animation';
+        btn.setAttribute('aria-pressed', playing ? 'false' : 'true');
+      }
+    }
+    set(!reduceMotion);
+    if (btn) btn.addEventListener('click', function () { set(im.src.indexOf(still) !== -1); });
   });
 
   // Numbers are already correct in the markup (see index.html etc.) so that
